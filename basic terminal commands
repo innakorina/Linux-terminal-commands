@@ -31,3 +31,7 @@ Innas-MacBook-Pro:~ innakorzhouska$ vim .bash_profile
 
 pushing the changes from system file:
 Innas-MacBook-Pro:~ innakorzhouska$ source .bash_profile
+
+
+to find a package from few directories (: separates new path)
+export PYTHONPATH=“${PYTHONPATH}:/Users/cynthiacorrea/python_packages:/Users/cynthiacorrea/python_packages/my_application/config:/anaconda3/lib/python3.6/site-packages”
