@@ -1,0 +1,33 @@
+changing directory to the root:
+Innas-MacBook-Pro:~ innakorzhouska$ cd
+
+Displaying the list of the folders:
+Innas-MacBook-Pro:~ innakorzhouska$ ls
+
+Displaying the list including the hidden files inside of the folders:
+Innas-MacBook-Pro:~ innakorzhouska$ ls -a
+
+changing directory to the specific one downwards :
+Innas-MacBook-Pro:~ innakorzhouska$ cd music
+
+Displaying thec urrent directory:
+Innas-MacBook-Pro:~ innakorzhouska$ pwd
+
+
+Displaying the path to python in two ways:
+Innas-MacBook-Pro:~ innakorzhouska$ which python
+/usr/bin/python
+Innas-MacBook-Pro:~ innakorzhouska$ echo $PYTHONPATH
+/usr/bin/python
+
+
+Removing a file:
+Innas-MacBook-Pro:~ innakorzhouska$ rm .bash_profile
+
+
+Accessing the file in the VIM editor:
+Innas-MacBook-Pro:~ innakorzhouska$ vim .bash_profile
+
+
+pushing the changes from system file:
+Innas-MacBook-Pro:~ innakorzhouska$ source .bash_profile
