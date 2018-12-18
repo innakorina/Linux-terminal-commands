@@ -37,5 +37,13 @@ Innas-MacBook-Pro:~ innakorzhouska$ vim .bash_profile
 Innas-MacBook-Pro:~ innakorzhouska$ source .bash_profile
 
 
-#Find a package from few directories (: separates new path)
-export PYTHONPATH=“${PYTHONPATH}:/Users/cynthiacorrea/python_packages:/Users/cynthiacorrea/python_packages/my_application/config:/anaconda3/lib/python3.6/site-packages”
+#In case of broken path,  bash might stop recognizing basic commands like ls, etc.
+#need to temporary export possible directories  and copy them into the .bash_profile file again permanently
+#(: separates new path)
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+#after this enter 
+Innas-MacBook-Pro:~ innakorzhouska$ vim .bash_profile
+#and insert those directories inside the file --> see the examples of the bash_profile files
+
+
+
