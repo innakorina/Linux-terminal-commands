@@ -1,37 +1,41 @@
-changing directory to the root:
+#Changing directory to the root:
 Innas-MacBook-Pro:~ innakorzhouska$ cd
 
-Displaying the list of the folders:
+#Displaying the list of the folders:
 Innas-MacBook-Pro:~ innakorzhouska$ ls
 
-Displaying the list including the hidden files inside of the folders:
+#Displaying the list including the hidden files inside of the folders:
 Innas-MacBook-Pro:~ innakorzhouska$ ls -a
 
-changing directory to the specific one downwards :
+#Changing directory to the specific one downwards :
 Innas-MacBook-Pro:~ innakorzhouska$ cd music
 
-Displaying thec urrent directory:
+#Displaying the current directory:
 Innas-MacBook-Pro:~ innakorzhouska$ pwd
 
 
-Displaying the path to python in two ways:
+#Displaying the path to python in two ways:
+#1
 Innas-MacBook-Pro:~ innakorzhouska$ which python
 /usr/bin/python
+
+#2
 Innas-MacBook-Pro:~ innakorzhouska$ echo $PYTHONPATH
 /usr/bin/python
 
+#Displaying the entire path
+Innas-MacBook-Pro:~ innakorzhouska$ echo $PATH
+/Users/innakorzhouska/miniconda3/bin:/Applications/SnowSQL.app/Contents/MacOS
 
-Removing a file:
+#Removing a file:
 Innas-MacBook-Pro:~ innakorzhouska$ rm .bash_profile
 
-
-Accessing the file in the VIM editor:
+#Accessing the file in the VIM editor:
 Innas-MacBook-Pro:~ innakorzhouska$ vim .bash_profile
 
-
-pushing the changes from system file:
+#Pushing the changes from system file:
 Innas-MacBook-Pro:~ innakorzhouska$ source .bash_profile
 
 
-to find a package from few directories (: separates new path)
+#Find a package from few directories (: separates new path)
 export PYTHONPATH=“${PYTHONPATH}:/Users/cynthiacorrea/python_packages:/Users/cynthiacorrea/python_packages/my_application/config:/anaconda3/lib/python3.6/site-packages”
