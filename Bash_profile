@@ -1,12 +1,19 @@
------------How to write virtual env into bash_profile file------------
-in order to access and edit it from terminal: 
-vim.bash_profile
+--------------------Editing .bash_profile --------------------- 
+#Access and edit it from terminal: 
+Innas-MacBook-Pro:~ innakorzhouska$ vim .bash_profile
 .........
+
 VIM editor is used to edit inside (see commands related to VIM)
 inside the file should have only needed environments:
+":" is used to add another environment 
+":$PATH" - in case of new line the new path will consist of the newly added line and includes the old line of pathes as well
+Sometimes "export PYTHONPATH=" is used as alternative ???
+"" is optinal
 
 
--------Example from Cynthia's 
+
+
+-------Example from Cynthia's bash_profile
 
 export PYTHONPATH=“${PYTHONPATH}:/Users/cynthiacorrea/python_packages:/Users/cynthiacorrea/python_packages/my_application/config:/anaconda3/lib/python3.6/site-packages”
 
@@ -29,27 +36,14 @@ export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
 
 
 
-----------Anaconda created incorectly (with comdition)
+--------My working profile
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$PATH
+  
+# added by Miniconda3 installer
+export PATH="/Users/innakorzhouska/miniconda3/bin:$PATH"
+
 # added by Snowflake SnowSQL installer v1.0
 export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
-# added by Anaconda3 5.3.1 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
-
-
 
 
 after changing of  bash_profile its important to source it(runs the command so it will be registered in the system//instead of restarting the cpoumputer):
