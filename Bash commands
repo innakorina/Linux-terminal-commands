@@ -19,6 +19,11 @@ user@bash:
 #another way without writing entire path:
 user@bash: ./myscript.sh
 
+
+#-----in Windows:
+sh name.sh
+
+
 #When you just type a name on the command line Bash tries to find it in a series of directories stored in a variable called $PATH. 
 We can see the current value of this variable using the command echo
 
