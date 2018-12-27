@@ -1,0 +1,63 @@
+Bash commands cheat-sheet:
+https://devhints.io/bash
+
+
+Running .sh files:
+https://ryanstutorials.net/bash-scripting-tutorial/bash-script.php
+
+simple example of bash file:
+#------------myscript.sh----------
+#!/bin/bash
+# A sample Bash script, by Ryan
+echo Hello World!
+
+#-------running the script:
+user@bash: /home/ryan/myscript.sh
+Hello World!
+user@bash: 
+
+#another way without writing entire path:
+user@bash: ./myscript.sh
+
+#When you just type a name on the command line Bash tries to find it in a series of directories stored in a variable called $PATH. 
+We can see the current value of this variable using the command echo
+
+
+
+#----------to see path variable:
+user@bash: echo $PATH
+/home/ryan/bin:/usr/local/bin:/usr/bin:/bin
+user@bash: 
+
+
+#!/bin/bash
+This is the first line of the script above. The hash exclamation mark ( #! ) character sequence is referred to as the Shebang.
+Following it is the path to the interpreter (or program) that should be used to run (or interpret) the rest of the lines in the text file. 
+(For Bash scripts it will be the path to Bash, but there are many other types of scripts and they each have their own interpreter.)
+It is possible to leave out the line with the shebang and still run the script but it is unwise. 
+If you are at a terminal and running the Bash shell and you execute a script without a shebang then Bash will assume it is a Bash script. 
+So this will only work assuming the user running the script is running it in a Bash shell and there are a variety of reasons why this may not be the case, which is dangerous.
+
+You can also run Bash, passing the script as an argument:
+user@bash: bash myscript.sh
+Hello World!
+user@bash:
+
+#------------Variables:
+https://www.shellscript.sh/variables1.html
+Note that there must be no spaces around the "=" sign: VAR=value works; VAR = value doesn't work.
+
+#!/bin/sh
+MY_MESSAGE="Hello World"
+echo $MY_MESSAGE
+
+#!/bin/sh
+echo What is your name?
+read MY_NAME
+echo "Hello $MY_NAME - hope you're well."
+
+
+#-----------If statements:
+https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#indenting
+
+
