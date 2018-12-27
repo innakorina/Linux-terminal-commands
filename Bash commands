@@ -56,6 +56,11 @@ echo What is your name?
 read MY_NAME
 echo "Hello $MY_NAME - hope you're well."
 
+#------Example of a python script with 3 parameters, which are path to files in following folders:
+#!/bin/bash
+#
+python ./src/find_political_donors.py ./input/itcont.txt ./output/medianvals_by_zip.txt ./output/medianvals_by_date.txt
+
 
 #-----------If statements:
 https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#indenting
