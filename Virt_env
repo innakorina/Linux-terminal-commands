@@ -1,0 +1,7 @@
+tutorial:
+https://docs.python.org/3/tutorial/venv.html
+
+
+create with conda:
+
+conda create -n yourenvname python=x.x anaconda
