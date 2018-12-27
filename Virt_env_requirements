@@ -1,0 +1,13 @@
+tutorial for Python virt env:
+https://docs.python.org/3/tutorial/venv.html
+
+
+#------create virt env called "virt_conda" with conda:
+Innas-MacBook-Pro:~ innakorzhouska$ conda create -n virt_conda python=x.x anaconda
+
+#-------activate
+Innas-MacBook-Pro:~ innakorzhouska$ source activate virt_conda
+
+#all commands are available as with base environment:
+# getting the requirements into txt file:
+(virt_conda) Innas-MacBook-Pro:Documents innakorzhouska$ pip freeze > requirements.txt
