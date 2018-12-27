@@ -62,9 +62,29 @@ read MY_NAME
 echo "Hello $MY_NAME - hope you're well."
 
 #------Example of a python script with 3 parameters, which are path to files in following folders:
+_________________
 #!/bin/bash
 #
 python ./src/find_political_donors.py ./input/itcont.txt ./output/medianvals_by_zip.txt ./output/medianvals_by_date.txt
+__________________
+
+#Python code itself looks like:
+______________________
+import pandas as pd
+import sys
+
+inFile = sys.argv[1]
+outFile = sys.argv[2]
+outFile2 = sys.argv[3]
+
+path=inFile
+#import numpy as np
+def zipper(data):
+    df1=data.loc[: , [0,10,13,14,15]]
+............
+_________________________
+
+
 
 
 #-----------If statements:
