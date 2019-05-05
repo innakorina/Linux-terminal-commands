@@ -23,9 +23,19 @@ Innas-MacBook-Pro:~ innakorzhouska$ which python
 Innas-MacBook-Pro:~ innakorzhouska$ echo $PYTHONPATH
 /usr/bin/python
 
-#Displaying the entire path
+#Displaying the entire path in Mac
 Innas-MacBook-Pro:~ innakorzhouska$ echo $PATH
 /Users/innakorzhouska/miniconda3/bin:/Applications/SnowSQL.app/Contents/MacOS
+
+
+#Displaying the entire path in Windows
+C:\Users\innak>echo %PATH%
+
+C:\Users\innak>echo %path:;=&echo.%
+
+C:\Users\innak>set
+
+
 
 #Removing a file:
 Innas-MacBook-Pro:~ innakorzhouska$ rm .bash_profile
